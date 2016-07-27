@@ -1,3 +1,15 @@
+.pace-running{
+	overflow: hidden;
+}
+
+.pace-running .wrap{
+	opacity: 0
+}
+
+.pace-done .wrap{
+	opacity: 1
+}
+
 .pace{
 	pointer-events: none;
 	user-select: none;
@@ -17,10 +29,6 @@
 	transition-duration: .6s;
 	opacity: 1;
 	transition: opacity .6s ease-out .8s;
-}
-
-.pace-running{
-	overflow: hidden;
 }
 
 .pace-done .pace{
