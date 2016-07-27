@@ -17,6 +17,7 @@
 	transition-duration: .6s;
 	opacity: 1;
 	transition: opacity .6s ease-out .8s;
+	overflow: hidden;
 }
 
 .pace-done .pace{
