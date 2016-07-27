@@ -44,7 +44,7 @@ table {
 .pace-running {
   overflow: hidden; }
 
-.pace-running .wrap {
+.wrap {
   opacity: 0; }
 
 .pace-done .wrap {
