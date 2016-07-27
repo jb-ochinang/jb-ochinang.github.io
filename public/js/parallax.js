@@ -53,7 +53,7 @@ jQuery(document).ready(function($){
 		var windowW = $(window).width(),
 			wrapperHeight = $(window).height(),
 			proportions = ( maxRotationY > maxRotationX ) ? 1.1/(Math.sin(Math.PI / 2 - maxRotationY*Math.PI/180)) : 1.1/(Math.sin(Math.PI / 2 - maxRotationX*Math.PI/180)),
-			newImageWidth = Math.ceil(halfWindowW*2*proportions),
+			newImageWidth = Math.ceil(halfWindowW*2.3*proportions),
 			newImageHeight = Math.ceil(newImageWidth/aspectRatio),
 			newLeft = halfWindowW - newImageWidth/2,
 			newTop = (wrapperHeight - newImageHeight)/2;
@@ -62,25 +62,26 @@ jQuery(document).ready(function($){
 		$('.sectionInner, .menu').css({
 			'height' : wrapperHeight,
 		});
-		
-		if(windowW > 768) {
+
+		if(windowW > 800) {
 			//set dimentions and position of the .sectionInner
 			$('.cd-floating-background').addClass('is-absolute').css({
-				'left' : newLeft,
-				'top' : newTop,
+				'left' : (windowW - newImageWidth)/2,
+				'top' : (wrapperHeight - newImageHeight)/2,
 				'width' : newImageWidth,
 			});
 		} else {
 			//set by sir leo
 			var imgH = $('.cd-floating-background img').height(),
 				imgW = $('.cd-floating-background img').width(),
-				secH = $('.sec01 .sectionInner').outerHeight()*1.5,
+				secH = $('.sec01 .sectionInner').outerHeight()*1.7,
 				targetW = 0;
 			
 			targetW = (secH * imgW)/imgH;
+			console.log(targetW);
 			$('.cd-floating-background').addClass('is-absolute').css({
-				'left' : ($(window).width()-$(this).outerWidth())/2+'px',
-				'top' : 0,
+				'left' : ($(this).outerWidth()-targetW)/2,
+				'top' : ($(this).outerWidth()-secH)/2,
 				'width' : targetW+"px",
 			});
 		}
@@ -90,8 +91,6 @@ jQuery(document).ready(function($){
 		var rotateY = ((-event.pageX+halfWindowW)/halfWindowW)*maxRotationY,
 			yPosition = event.pageY - topOffset,
 			rotateX = ((yPosition-halfWindowH)/halfWindowH)*maxRotationX;
-
-		console.log(event.pageX+","+event.pageY);
 		
 		if( rotateY > maxRotationY) rotateY = maxRotationY;
 		if( rotateY < -maxRotationY ) rotateY = -maxRotationY;
