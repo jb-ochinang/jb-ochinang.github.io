@@ -1,0 +1,14 @@
+{
+	"name": "bower-package",
+	"description": "",
+	"main": "bower",
+	"authors": [
+		"jb-ochinang <jb.ochinang@gmail.com>"
+	],
+	"license": "MIT",
+	"homepage": "",
+	"dependencies": {
+		"angular": "^1.2.0"
+	},
+	"private": true
+}
