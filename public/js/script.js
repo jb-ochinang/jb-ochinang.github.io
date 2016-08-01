@@ -27,12 +27,12 @@
 		if($('.menu').hasClass('is-active')) {
 			var timer = setTimeout(function(){
 				$('.menu').removeClass('is-active');
-			}, 10);
-			$('.sec01Content').css({ 'display' : 'table-cell'});
+			}, 100);
+			$('.sec01Content').css({ 'visibility' : 'visible'});
 		} else {
 			$('.menu').addClass('is-active');
 			var timer = setTimeout(function(){
-				$('.sec01Content').css({ 'display' : 'none'});
+				$('.sec01Content').css({ 'visibility' : 'hidden'});
 			}, 500);
 		}
 	});

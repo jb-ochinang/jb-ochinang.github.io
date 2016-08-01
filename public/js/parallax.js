@@ -78,7 +78,6 @@ jQuery(document).ready(function($){
 				targetW = 0;
 			
 			targetW = (secH * imgW)/imgH;
-			console.log(targetW);
 			$('.cd-floating-background').addClass('is-absolute').css({
 				'left' : ($(this).outerWidth()-targetW)/2,
 				'top' : ($(this).outerWidth()-secH)/2,

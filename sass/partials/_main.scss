@@ -599,12 +599,12 @@ header{
 			vertical-align: middle;
 			text-align: center;
 			padding-bottom: 58px;
-			z-index: 2;
 			
 			h1{
 				display: inline-block;
 				position: relative;
 				margin: 0 0 90px;
+				z-index: 2;
 				
 				img{
 					max-width: 245px;
@@ -631,34 +631,39 @@ header{
 				}
 			}
 			
-			h2{
-				margin-bottom: 20px;
-				font-family: "VanitasStencilBold", Helvetica, Arial, sans-serif;
-				font-size: 44px;
-				line-height: 1.3;
-				text-transform: uppercase;
+			.description{
+				position: relative;
+				z-index: 1;
 				
-				@media (max-width: 767px){
-					width: 90%;
-					margin: 0 auto 30px;
-				}
-				
-				@media (max-width: 375px){
-					width: 85%;
-				}
-			}
+				h2{
+					margin-bottom: 20px;
+					font-family: "VanitasStencilBold", Helvetica, Arial, sans-serif;
+					font-size: 44px;
+					line-height: 1.3;
+					text-transform: uppercase;
 
-			p{
-				margin-bottom: 50px;
-				font-size: 33px;
-				font-style: italic;
-				font-weight: 300;
-				line-height: 1.3;
-				
-				@media (max-width: 767px){
-					font-size: 28px;
-					width: 84%;
-					margin: 0 auto 60px;
+					@media (max-width: 767px){
+						width: 90%;
+						margin: 0 auto 30px;
+					}
+
+					@media (max-width: 375px){
+						width: 85%;
+					}
+				}
+
+				p{
+					margin-bottom: 50px;
+					font-size: 33px;
+					font-style: italic;
+					font-weight: 300;
+					line-height: 1.3;
+
+					@media (max-width: 767px){
+						font-size: 28px;
+						width: 84%;
+						margin: 0 auto 60px;
+					}
 				}
 			}
 		}
@@ -670,7 +675,7 @@ header{
 			left: 0;
 			bottom: 0;
 			padding-bottom: 41px;
-			z-index: 2;
+			z-index: 1;
 			
 			.mouse{
 				height: 30px;
@@ -1412,7 +1417,7 @@ footer{
 	height: 100%;
 	top: 0;
 	left: 0;
-	z-index: 1;
+	z-index: 2;
 }
 
 @keyframes mouse-wheel
