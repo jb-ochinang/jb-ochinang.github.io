@@ -52,6 +52,13 @@ body{
 	width: 100%;
 }
 
+a{
+	-webkit-touch-callout:none;                /* prevent callout to copy image, etc when tap to hold */
+	-webkit-text-size-adjust:none;             /* prevent webkit from resizing text to fit */
+	-webkit-tap-highlight-color:rgba(0,0,0,0); /* prevent tap highlight color / shadow */
+	-webkit-user-select:none;                  /* prevent copy paste, to allow, change 'none' to 'text' */ 
+}
+
 header{
 	position: absolute;
 	width: 100%;
@@ -1418,6 +1425,16 @@ footer{
 	top: 0;
 	left: 0;
 	z-index: 2;
+}
+
+@media (max-width: 767px){
+	.animatedParent .animated.go img {
+		-webkit-filter: grayscale(0%);
+		filter: grayscale(0%);
+		-webkit-filter: none;
+		filter: none;
+		transform: scale(1.05);
+	}
 }
 
 @keyframes mouse-wheel
