@@ -1790,13 +1790,16 @@ header {
     z-index: 0;
     transition: .5s; }
     header .menu .menuInner {
-      padding: 180px 22% 0;
+      padding: 180px 22%;
       overflow-y: hidden;
       transform: translateZ(0);
       backface-visibility: hidden;
       transform: translateX(-50%);
       transition: transform 0.7s;
       transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78); }
+      @media (max-width: 1023px) {
+        header .menu .menuInner {
+          padding: 150px 12%; } }
       @media (max-width: 768px) {
         header .menu .menuInner {
           padding: 80px 22%; } }

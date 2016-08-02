@@ -28,11 +28,11 @@
 			var timer = setTimeout(function(){
 				$('.menu').removeClass('is-active');
 			}, 100);
-			$('.sec01Content').css({ 'visibility' : 'visible'});
+			$('.sec01Content').css({ 'display' : 'table-cell'});
 		} else {
 			$('.menu').addClass('is-active');
 			var timer = setTimeout(function(){
-				$('.sec01Content').css({ 'visibility' : 'hidden'});
+				$('.sec01Content').css({ 'display' : 'none'});
 			}, 500);
 		}
 	});

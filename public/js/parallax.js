@@ -44,7 +44,7 @@ jQuery(document).ready(function($){
 				initBackground();
 			});
 		} else {
-			$('.sectionInner').attr('style', '');
+			$('.sectionInner, .menu').attr('style', '');
 			$('.cd-floating-background').attr('style', '').removeClass('is-absolute');
 		}
 	});
