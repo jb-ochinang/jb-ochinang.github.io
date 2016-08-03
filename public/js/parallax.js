@@ -44,7 +44,7 @@ jQuery(document).ready(function($){
 				initBackground();
 			});
 		} else {
-			$('.sectionInner, .menu').attr('style', '');
+			$('.sectionInner').attr('style', '');
 			$('.cd-floating-background').attr('style', '').removeClass('is-absolute');
 		}
 	});
@@ -59,11 +59,11 @@ jQuery(document).ready(function($){
 			newTop = (wrapperHeight - newImageHeight)/2;
 
 		//set an height for the .sectionInner
-		$('.sectionInner, .menu').css({
+		$('.sectionInner').css({
 			'height' : wrapperHeight,
 		});
 
-		if(windowW > 800) {
+		if(windowW > 1024) {
 			//set dimentions and position of the .sectionInner
 			$('.cd-floating-background').addClass('is-absolute').css({
 				'left' : (windowW - newImageWidth)/2,
@@ -268,5 +268,5 @@ jQuery(document).ready(function($){
 		html.className += ' preserve-3d';
 	}
 	document.body.removeChild(element);
-
+	
 })();

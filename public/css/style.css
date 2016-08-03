@@ -1778,7 +1778,7 @@ header {
         opacity: 1; }
   header .menu {
     display: block;
-    position: absolute;
+    position: relative;
     height: 100%;
     width: 100%;
     font-family: "VanitasStencilBoldItalic", Helvetica, Arial, sans-serif;
@@ -1790,6 +1790,7 @@ header {
     z-index: 0;
     transition: .5s; }
     header .menu .menuInner {
+      position: relative;
       padding: 180px 22%;
       overflow-y: hidden;
       transform: translateZ(0);
@@ -1799,13 +1800,19 @@ header {
       transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78); }
       @media (max-width: 1023px) {
         header .menu .menuInner {
-          padding: 150px 12%; } }
-      @media (max-width: 768px) {
+          padding: 160px 18%; } }
+      @media (max-width: 950px) {
         header .menu .menuInner {
-          padding: 80px 22%; } }
+          padding: 150px 16%; } }
+      @media (max-width: 850px) {
+        header .menu .menuInner {
+          padding: 140px 13%; } }
+      @media (max-width: 767px) {
+        header .menu .menuInner {
+          padding: 100px 22%; } }
       header .menu .menuInner .menuLeft {
         float: left; }
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
           header .menu .menuInner .menuLeft {
             float: none; } }
         header .menu .menuInner .menuLeft h2 {
@@ -1856,7 +1863,7 @@ header {
               padding-left: 0; } }
           header .menu .menuInner .menuLeft .primaryNav li {
             margin-bottom: 40px; }
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
               header .menu .menuInner .menuLeft .primaryNav li {
                 margin-bottom: 30px; } }
             @media (max-width: 375px) {
@@ -1871,7 +1878,7 @@ header {
               display: block;
               margin: 10px 0 0 10px;
               font-size: 30px; }
-              @media (max-width: 768px) {
+              @media (max-width: 767px) {
                 header .menu .menuInner .menuLeft .primaryNav li .submenu {
                   font-size: 24px; } }
               header .menu .menuInner .menuLeft .primaryNav li .submenu a {
@@ -1888,7 +1895,7 @@ header {
                   animation-iteration-count: infinite; }
           header .menu .menuInner .menuLeft .primaryNav li > a {
             font-size: 60px; }
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
               header .menu .menuInner .menuLeft .primaryNav li > a {
                 font-size: 50px; } }
             @media (max-width: 375px) {
@@ -1925,7 +1932,7 @@ header {
                 animation-delay: 0.4s;
                 animation-timing-function: linear;
                 animation-iteration-count: infinite; }
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
           header .menu .menuInner .menuRight {
             float: none;
             text-align: left;

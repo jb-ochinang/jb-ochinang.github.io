@@ -28,11 +28,11 @@
 			var timer = setTimeout(function(){
 				$('.menu').removeClass('is-active');
 			}, 100);
-			$('.sec01Content').css({ 'display' : 'table-cell'});
+			$('.sec01Content').css({ 'visibility' : 'visible'});
 		} else {
 			$('.menu').addClass('is-active');
 			var timer = setTimeout(function(){
-				$('.sec01Content').css({ 'display' : 'none'});
+				$('.sec01Content').css({ 'visibility' : 'hidden'});
 			}, 500);
 		}
 	});
@@ -40,7 +40,12 @@
 	$( 'a' ).click(function(e) {
 		e.preventDefault();
 	});
+	var hehe = $('.sectionInner').outerHeight(true);
+	$('.menu').css('height', hehe);
 	
-
+	$(window).on('resize',function() {
+		var hehe = $('.sectionInner').outerHeight(true);
+		$('.menu').css('height', hehe);
+	}).trigger('resize');
 	
 })();

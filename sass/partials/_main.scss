@@ -311,7 +311,7 @@ header{
 
 	.menu{
 		display: block;
-		position: absolute;
+		position: relative;
 		height: 100%;
 		width: 100%;
 		font-family: "VanitasStencilBoldItalic", Helvetica, Arial, sans-serif;
@@ -324,6 +324,7 @@ header{
 		transition: .5s;
 		
 		.menuInner{
+			position: relative;
 			padding: 180px 22%;
 			overflow-y: hidden;
 			transform: translateZ(0);
@@ -333,17 +334,25 @@ header{
 			transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
 			
 			@media (max-width: 1023px){
-				padding: 150px 12%;
+				padding: 160px 18%;
 			}
 			
-			@media (max-width: 768px){
-				padding: 80px 22%;
+			@media (max-width: 950px){
+				padding: 150px 16%;
+			}
+			
+			@media (max-width: 850px){
+				padding: 140px 13%;
+			}
+			
+			@media (max-width: 767px){
+				padding: 100px 22%;
 			}
 
 			.menuLeft{
 				float: left;
 				
-				@media (max-width: 768px){
+				@media (max-width: 767px){
 					float: none;
 				}
 
@@ -413,7 +422,7 @@ header{
 					li{
 						margin-bottom: 40px;
 						
-						@media (max-width: 768px){
+						@media (max-width: 767px){
 							margin-bottom: 30px;
 						}
 						@media (max-width: 375px){
@@ -434,7 +443,7 @@ header{
 							margin: 10px 0 0 10px;
 							font-size: 30px;
 							
-							@media (max-width: 768px){
+							@media (max-width: 767px){
 								font-size: 24px;
 							}
 							
@@ -459,7 +468,7 @@ header{
 					li > a{
 						font-size: 60px;
 						
-						@media (max-width: 768px){
+						@media (max-width: 767px){
 							font-size: 50px;
 						}
 						
@@ -517,7 +526,7 @@ header{
 					}
 				}
 				
-				@media (max-width: 768px){
+				@media (max-width: 767px){
 					float: none;
 					text-align: left;
 					padding-top: 5px;
