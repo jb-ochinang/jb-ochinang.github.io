@@ -1095,7 +1095,7 @@ header {
       width: 100%; }
       .sec03 .secInner .row .col {
         display: table-cell;
-        vertical-align: baseline;
+        vertical-align: middle;
         text-align: center; }
         .sec03 .secInner .row .col h2 {
           font-family: "VanitasStencilBold", Helvetica, Arial, sans-serif;
@@ -1107,6 +1107,10 @@ header {
           font-family: "VanitasStencilBold", Helvetica, Arial, sans-serif;
           font-size: 30px;
           margin-top: 15px; }
+        .sec03 .secInner .row .col .skillsIcon img {
+          width: 100%;
+          max-width: 100px;
+          vertical-align: bottom; }
         @media (max-width: 1150px) {
           .sec03 .secInner .row .col .skillsIcon img {
             width: 40%; } }

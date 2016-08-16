@@ -973,7 +973,7 @@ header{
 
 			.col{
 				display: table-cell;
-				vertical-align: baseline;
+				vertical-align: middle;
 				text-align: center;
 
 				h2{
@@ -988,6 +988,12 @@ header{
 					font-family: "VanitasStencilBold", Helvetica, Arial, sans-serif;
 					font-size: 30px;
 					margin-top: 15px;
+				}
+				
+				.skillsIcon img{
+					width: 100%;
+					max-width: 100px;
+					vertical-align: bottom;
 				}
 				
 				@media (max-width: 1150px){
