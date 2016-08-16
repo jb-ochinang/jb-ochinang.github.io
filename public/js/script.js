@@ -53,4 +53,8 @@ $(document).ready(function()
 	$(window).on('resize', function(){
 		res();
 	});
+	
+	$('.wrap').animate({
+		opacity: 1
+	}, 1000);
 });
