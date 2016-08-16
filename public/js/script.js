@@ -40,7 +40,7 @@ $(document).ready(function()
 		}
 	});
 	
-	$( 'a' ).click(function(e) {
+	$( "a[href='#']" ).click(function(e) {
 		e.preventDefault();
 	});
 	
