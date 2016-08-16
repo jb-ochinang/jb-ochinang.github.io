@@ -291,12 +291,25 @@ header{
 
 					&:first-child{
 						margin-left: 0;
+						
+						a{
+							img{
+								width: 100%;
+								max-width: 25px;
+								vertical-align: middle;
+							}
+						}
 					}
 
 					a{
 						color: #000;
 						text-decoration: none;
-
+						
+						img{
+							width: 100%;
+							max-width: 38px;
+							vertical-align: middle;
+						}
 					}
 				}
 			}
@@ -755,6 +768,11 @@ header{
 }
 
 .sec02{
+	.secInner{
+		max-width: 1600px;
+		margin: 0 auto;
+	}
+	
 	.row{
 		display: table;
 		width: 100%;
@@ -1068,7 +1086,7 @@ header{
 }
 
 .sec04{
-	background: #eee;
+	background: #fff;
 	padding: 40px 0 111px;
 	
 	.secInner {
@@ -1339,6 +1357,22 @@ footer{
 					float: left;
 					&:first-child{
 						margin-right: 34px;
+						
+						a{
+							img{
+								width: 100%;
+								max-width: 25px;
+								vertical-align: middle;
+							}
+						}
+					}
+					
+					a{
+						img{
+							width: 100%;
+							max-width: 38px;
+							vertical-align: middle;
+						}
 					}
 				}
 				
@@ -1402,7 +1436,7 @@ footer{
 				
 				.socialbot{
 					float: none;
-					width: 95px;
+					width: 100px;
 					margin: 0 auto;
 				}
 			}

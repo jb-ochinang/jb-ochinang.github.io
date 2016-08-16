@@ -1,4 +1,5 @@
-(function() {
+$(document).ready(function()
+{
 
 	'use strict';
 
@@ -25,11 +26,13 @@
 	
 	$( '.hamburger' ).click(function() {
 		if($('.menu').hasClass('is-active')) {
+			res();
 			var timer = setTimeout(function(){
 				$('.menu').removeClass('is-active');
 			}, 100);
 			$('.sec01Content').css({ 'visibility' : 'visible'});
 		} else {
+			res();
 			$('.menu').addClass('is-active');
 			var timer = setTimeout(function(){
 				$('.sec01Content').css({ 'visibility' : 'hidden'});
@@ -40,12 +43,14 @@
 	$( 'a' ).click(function(e) {
 		e.preventDefault();
 	});
-	var hehe = $('.sectionInner').outerHeight(true);
-	$('.menu').css('height', hehe);
 	
-	$(window).on('resize',function() {
-		var hehe = $('.sectionInner').outerHeight(true);
-		$('.menu').css('height', hehe);
-	}).trigger('resize');
+	function res() {
+		$('.menu').css({
+			'height' : $('.sec01').height()
+		});
+	}
 	
-})();
+	$(window).on('resize', function(){
+		res();
+	});
+});

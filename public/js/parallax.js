@@ -57,12 +57,13 @@ jQuery(document).ready(function($){
 			newImageHeight = Math.ceil(newImageWidth/aspectRatio),
 			newLeft = halfWindowW - newImageWidth/2,
 			newTop = (wrapperHeight - newImageHeight)/2;
-
 		//set an height for the .sectionInner
-		$('.sectionInner').css({
+		
+		$('.sectionInner, .menu').css({
 			'height' : wrapperHeight,
 		});
-
+		
+		
 		if(windowW > 1024) {
 			//set dimentions and position of the .sectionInner
 			$('.cd-floating-background').addClass('is-absolute').css({
@@ -126,7 +127,7 @@ jQuery(document).ready(function($){
 					"value": 600,
 					"density": {
 						"enable": true,
-						"value_area": 800
+						"value_area": 1000
 					}
 				},
 				"color": {
@@ -176,7 +177,7 @@ jQuery(document).ready(function($){
 				},
 				"move": {
 					"enable": true,
-					"speed": 1.5,
+					"speed": 2,
 					"direction": "none",
 					"random": true,
 					"straight": false,
