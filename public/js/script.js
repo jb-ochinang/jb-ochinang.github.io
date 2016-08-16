@@ -63,5 +63,5 @@ $(document).ready(function()
 		$('body').css('overflow', 'visible');
 		clearInterval(scrollBar);
 		}
-	}, 10);
+	}, 1);
 });
