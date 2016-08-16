@@ -57,4 +57,11 @@ $(document).ready(function()
 	$('.wrap').animate({
 		opacity: 1,
 	}, 100);
+	
+	var scrollBar = setInterval(function(){
+		if($('body').children('#qLoverlay').length < 1) {
+		$('body').css('overflow', 'visible');
+		clearInterval(scrollBar);
+		}
+	}, 10);
 });
