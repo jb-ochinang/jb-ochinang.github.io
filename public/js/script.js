@@ -58,13 +58,13 @@ $(document).ready(function()
 		opacity: 1,
 	}, 100);
 	
-	var scrollBar = setInterval(function(){
+	/*var scrollBar = setInterval(function(){
 		console.log('test');
 		if($('body').children('#qLoverlay').length < 1) {
 			$('body').css('overflow', 'visible');
 			clearInterval(scrollBar);
 		}
-	}, 10);
+	}, 10);*/
 	
 	
 });
