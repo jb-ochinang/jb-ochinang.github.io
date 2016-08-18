@@ -1,5 +1,4 @@
-$(document).ready(function()
-{
+$(document).ready(function(){
 
 	'use strict';
 
@@ -65,5 +64,48 @@ $(document).ready(function()
 		}
 	}, 1);
 	
-	
+});
+
+window.sr = ScrollReveal();
+sr.reveal('.caption', {
+	origin: 'left',
+	distance: '50px',
+	duration: 1000,
+	opacity: 0,
+	reset: true
+});
+
+sr.reveal('.table5 .col', {
+	origin: 'bottom',
+	distance: '50px',
+	duration: 1000,
+	opacity: 0,
+	reset: true
+}, 50);
+
+sr.reveal('.map', {
+	origin: 'bottom',
+	distance: '70px',
+	duration: 1200,
+	opacity: 0,
+	scale: '.9',
+	mobile: false,
+	reset: false
+});
+
+sr.reveal('.captain', {
+	duration: 1111,
+	opacity: 0,
+	scale: '.5',
+	reset: true
+});
+
+sr.reveal('.sec06 .secInner', {
+	origin: 'top',
+	distance: '50px',
+	duration: 1111,
+	opacity: 0,
+	scale: '.9',
+	mobile: false,
+	reset: false
 });
