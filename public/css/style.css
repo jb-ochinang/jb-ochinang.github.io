@@ -760,7 +760,6 @@ header {
                   color: #000;
                   animation-name: back-pulse;
                   animation-duration: 1s;
-                  animation-delay: 0.5s;
                   animation-timing-function: linear;
                   animation-iteration-count: infinite; }
           header .menu .menuInner .menuLeft .primaryNav li > a {
@@ -799,7 +798,6 @@ header {
                 color: #000;
                 animation-name: back-pulse;
                 animation-duration: 1s;
-                animation-delay: 0.4s;
                 animation-timing-function: linear;
                 animation-iteration-count: infinite; }
         @media (max-width: 767px) {
