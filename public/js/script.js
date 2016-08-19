@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
 	'use strict';
 
@@ -10,61 +10,66 @@ $(document).ready(function(){
 	};
 
 	function toggleHandler(toggle) {
-		toggle.addEventListener( 'click', function(e) {
+		toggle.addEventListener('click', function (e) {
 			e.preventDefault();
-			(this.classList.contains('is-active') === true) ? this.classList.remove('is-active') : this.classList.add('is-active');
+			(this.classList.contains('is-active') === true) ? this.classList.remove('is-active'): this.classList.add('is-active');
 			$(this).prop('disabled', true);
-			setTimeout(function(){
+			setTimeout(function () {
 				$('.hamburger').prop('disabled', false);
 			}, 600);
-			setTimeout(function(){
+			setTimeout(function () {
 				$('.eggs').prop('disabled', false);
 			}, 400);
 		});
 	}
-	
-	$( '.hamburger' ).click(function() {
-		if($('.menu').hasClass('is-active')) {
+
+	$('.hamburger').click(function () {
+		if ($('.menu').hasClass('is-active')) {
 			res();
-			var timer = setTimeout(function(){
+			var timer = setTimeout(function () {
 				$('.menu').removeClass('is-active');
 			}, 100);
-			$('.sec01Content').css({ 'visibility' : 'visible'});
+			$('.sec01Content').css({
+				'visibility': 'visible'
+			});
 		} else {
 			res();
 			$('.menu').addClass('is-active');
-			var timer = setTimeout(function(){
-				$('.sec01Content').css({ 'visibility' : 'hidden'});
+			var timer = setTimeout(function () {
+				$('.sec01Content').css({
+					'visibility': 'hidden'
+				});
 			}, 500);
 		}
 	});
-	
-	$( "a[href='#']" ).click(function(e) {
+
+	$("a[href='#']").click(function (e) {
 		e.preventDefault();
 	});
-	
+
 	function res() {
 		$('.menu').css({
-			'height' : $('.sec01').height()
+			'height': $('.sec01').height()
 		});
 	}
-	
-	$(window).on('resize', function(){
+
+	$(window).on('resize', function () {
 		res();
 	});
-	
+
 	$('.wrap').animate({
-		opacity: 1,
-	}, 100);
-	
-	var scrollBar = setInterval(function(){
-		if($('body').children('#qLoverlay').length < 1) {
-		$('body').css('overflow', 'visible');
-		clearInterval(scrollBar);
+		opacity: 1
+	, }, 100);
+
+	var scrollBar = setInterval(function () {
+		if ($('body').children('#qLoverlay').length < 1) {
+			$('body').css('overflow', 'visible');
+			clearInterval(scrollBar);
 		}
 	}, 1);
-	
 });
+
+
 
 window.sr = ScrollReveal();
 sr.reveal('.caption', {
