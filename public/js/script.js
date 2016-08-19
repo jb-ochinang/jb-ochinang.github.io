@@ -2,9 +2,9 @@ $(document).ready(function () {
 
 	'use strict';
 
-	var img = new Image();
-	img.src = '/public/images/bg.png';
-	$('header .menu').css('background-image', 'url('+img.src+')');
+	var img_png = new Image();
+	img_png.src = '/public/images/bg.png';
+	$('header .menu').css('background-image', 'url('+img_png.src+')');
 	
 	var toggles = document.querySelectorAll('.hamburger, .eggs');
 
