@@ -653,7 +653,7 @@ header {
     width: 100%;
     font-family: "VanitasStencilBoldItalic", Helvetica, Arial, sans-serif;
     color: #222;
-    background: url("/public/images/bg.png");
+    background: url("/public/images/bg_small.png");
     background-size: cover;
     background-position: center;
     opacity: 0;
@@ -1045,20 +1045,17 @@ header {
           font-size: 18px; } }
       @media (max-width: 1023px) {
         .sec02 .row .col .caption h2 {
-          font-size: 33px;
-          margin-bottom: 0; }
+          font-size: 33px; }
         .sec02 .row .col .caption p {
           font-size: 18px; } }
       @media (max-width: 768px) {
         .sec02 .row .col .caption h2 {
-          font-size: 30px;
-          margin-bottom: 0; }
+          font-size: 30px; }
         .sec02 .row .col .caption p {
           font-size: 16px; } }
       @media (max-width: 425px) {
         .sec02 .row .col .caption h2 {
-          font-size: 33px;
-          margin-bottom: 0; }
+          font-size: 33px; }
         .sec02 .row .col .caption p {
           font-size: 18px; } }
   .sec02 .row .gray1 {

@@ -2,6 +2,10 @@ $(document).ready(function () {
 
 	'use strict';
 
+	var img = new Image();
+	img.src = '/public/images/bg.png';
+	$('header .menu').css('background-image', 'url('+img.src+')');
+	
 	var toggles = document.querySelectorAll('.hamburger, .eggs');
 
 	for (var i = toggles.length - 1; i >= 0; i--) {
@@ -30,14 +34,14 @@ $(document).ready(function () {
 				$('.menu').removeClass('is-active');
 			}, 100);
 			$('.sec01Content').css({
-				'visibility': 'visible'
+				'display': 'table-cell;'
 			});
 		} else {
 			res();
 			$('.menu').addClass('is-active');
 			var timer = setTimeout(function () {
 				$('.sec01Content').css({
-					'visibility': 'hidden'
+					'display': 'none'
 				});
 			}, 500);
 		}
