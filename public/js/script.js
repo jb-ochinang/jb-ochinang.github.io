@@ -34,7 +34,7 @@ $(document).ready(function () {
 				$('.menu').removeClass('is-active');
 			}, 100);
 			$('.sec01Content').css({
-				'display': 'table-cell;'
+				'display': 'table-cell'
 			});
 		} else {
 			res();
