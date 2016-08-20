@@ -34,14 +34,14 @@ $(document).ready(function () {
 				$('.menu').removeClass('is-active');
 			}, 100);
 			$('.sec01Content').css({
-				'display': 'table-cell'
+				'visibility': 'visible'
 			});
 		} else {
 			res();
 			$('.menu').addClass('is-active');
 			var timer = setTimeout(function () {
 				$('.sec01Content').css({
-					'display': 'none'
+					'visibility': 'hidden'
 				});
 			}, 500);
 		}
